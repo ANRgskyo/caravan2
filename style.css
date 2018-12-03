@@ -12,7 +12,7 @@ a {
   display: block;
   clear: both;
 }
-header, nav, h2, main-visual, footer {
+header, nav, h2, .main-visual, footer {
   font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 header {
@@ -37,7 +37,7 @@ header .headline {
 
 .nav-list {
   text-align: center;
-  pasdding: 10px 0;
+  padding: 10px 0;
   margin: 0 auto;
 }
 .nav-list-item {
@@ -190,24 +190,92 @@ footer {
   color: #fff;
 }
 
-.social i {
-  color: black;
-}
-
-@media screen and (max-width: 1024px) {
-  .social i {
-    color: green;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .social i {
-    color: red;
+  .blog {
+    padding-left: 1%;
+    margin-right: 22px;
   }
-}
+  .blog-image {
+    width: 45%;
+  }
 
 @media screen and (max-width: 425px) {
-  .social i {
-    color: blue;
+  header {
+    width: 100%;
+  }
+  .main-visual-content {
+    padding-top: 50px;
+  }
+  .nav-list {
+    width: 100%;
+  }
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .social {
+    display: none;
+  }
+  .main-visual {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .blog-image {
+    width: 49%;
+  }
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+  .sidebar {
+    width: 100%;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+  .pagination {
+    margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .main-visual-content {
+    padding-top: 50px;
+  }
+  .blog-text {
+    padding-left: 2%;
+  }
+  .blog-text-headline {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .blog-text-headline {
+    font-size: 14px;
+  }
+  .blog-date {
+    display: block;
+    }
+  .main-visual-content {
+    font-size: 15px;
+  }
+}
+
+
